@@ -26,9 +26,9 @@ function App() {
                 transition={{ duration: 0.5 }}
                 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6"
               >
-                Deine KI-Agenten für{' '}
-                <span className="relative inline-block">
-                  <span className="relative z-10">intelligentes Lead-Management</span>
+                Deine KI-Agenten für intelligentes{' '}
+                <span className="relative inline-block whitespace-nowrap">
+                  <span className="relative z-10">Lead-Management</span>
                   <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/40 -z-0"></span>
                 </span>
               </motion.h1>
