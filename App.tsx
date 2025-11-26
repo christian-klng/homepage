@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { AgentCard } from './components/AgentCard';
 import { AgentDetailModal } from './components/AgentDetailModal';
+import { AIChatDemo } from './components/AIChatDemo';
 import { Icons } from './components/Icons';
 import { Button } from './components/Button';
 import { AGENTS_DATA } from './constants';
@@ -91,13 +92,7 @@ function App() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative"
               >
-                {/* Platzhalter für Bild */}
-                <div className="aspect-video bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <div className="text-center text-gray-400">
-                    <Icons.ImagePlaceholder className="w-16 h-16 mx-auto mb-4" />
-                    <p className="text-sm">Bild-Platzhalter</p>
-                  </div>
-                </div>
+                <AIChatDemo />
               </motion.div>
             </div>
           </div>
