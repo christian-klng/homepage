@@ -12,12 +12,13 @@ interface AgentDetailModalProps {
 }
 
 export const AgentDetailModal: React.FC<AgentDetailModalProps> = ({ agent, onClose }) => {
+  // Kein Agent ausgewählt? Nichts anzeigen
   if (!agent) return null;
 
   return (
     <AnimatePresence>
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
-        {/* Backdrop */}
+        {/* Hintergrund-Overlay */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -26,7 +27,7 @@ export const AgentDetailModal: React.FC<AgentDetailModalProps> = ({ agent, onClo
           className="absolute inset-0 bg-gray-900/20 backdrop-blur-sm transition-opacity"
         />
 
-        {/* Modal Content */}
+        {/* Modal-Inhalt */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -34,7 +35,7 @@ export const AgentDetailModal: React.FC<AgentDetailModalProps> = ({ agent, onClo
           transition={{ duration: 0.2 }}
           className="relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col"
         >
-          {/* Header */}
+          {/* Kopfzeile */}
           <div className="flex items-center justify-between p-6 border-b border-gray-100 bg-white sticky top-0 z-10">
             <div className="flex items-center gap-4">
               <img 
@@ -53,22 +54,23 @@ export const AgentDetailModal: React.FC<AgentDetailModalProps> = ({ agent, onClo
             <button 
               onClick={onClose}
               className="p-2 rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Schließen"
             >
               <Icons.X className="w-5 h-5" />
             </button>
           </div>
 
-          {/* Scrollable Body */}
+          {/* Scrollbarer Inhalt */}
           <div className="overflow-y-auto p-6 sm:p-8">
             <div className="max-w-none">
               <MarkdownRenderer content={agent.content} />
             </div>
           </div>
 
-          {/* Footer Actions */}
+          {/* Fußzeile mit Aktionen */}
           <div className="p-6 border-t border-gray-100 bg-gray-50 flex justify-end gap-3">
-             <Button variant="secondary" onClick={onClose}>Close</Button>
-             <Button>Deploy {agent.name}</Button>
+             <Button variant="secondary" onClick={onClose}>Schließen</Button>
+             <Button>{agent.name} bereitstellen</Button>
           </div>
         </motion.div>
       </div>

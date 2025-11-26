@@ -1,37 +1,37 @@
 ---
 id: agent-001
 name: Atlas
-role: Data Architect
-description: Specializes in structuring complex datasets and generating actionable insights from unstructured data lakes.
+role: Daten-Architekt
+description: Spezialisiert auf die Strukturierung komplexer Datensätze und die Generierung verwertbarer Erkenntnisse aus unstrukturierten Data Lakes.
 avatarUrl: https://picsum.photos/id/64/200/200
 status: online
 capabilities:
-  - Data Mining
-  - SQL Generation
-  - Trend Analysis
+  - Daten-Mining
+  - SQL-Generierung
+  - Trend-Analyse
 ---
 
-# About Atlas
+# Über Atlas
 
-Atlas is designed to be the backbone of your data infrastructure. Unlike traditional ETL tools, Atlas uses semantic understanding to link disparate data sources.
+Atlas ist darauf ausgelegt, das Rückgrat deiner Dateninfrastruktur zu sein. Im Gegensatz zu herkömmlichen ETL-Tools nutzt Atlas semantisches Verständnis, um unterschiedliche Datenquellen zu verknüpfen.
 
-## Core Competencies
+## Kernkompetenzen
 
-*   **Schema Inference**: Automatically detects relationships between tables.
-*   **Query Optimization**: Rewrites SQL queries for 10x performance improvements.
-*   **Anomaly Detection**: Real-time monitoring of data quality streams.
+*   **Schema-Erkennung**: Erkennt automatisch Beziehungen zwischen Tabellen.
+*   **Query-Optimierung**: Schreibt SQL-Abfragen für 10-fache Leistungsverbesserungen um.
+*   **Anomalie-Erkennung**: Echtzeit-Überwachung von Datenqualitätsströmen.
 
-## Integration Guide
+## Integrationsleitfaden
 
-To integrate Atlas into your pipeline, simply provide read-access credentials. Atlas operates in a read-only mode by default to ensure data integrity.
+Um Atlas in deine Pipeline zu integrieren, stelle einfach Lese-Zugangsdaten bereit. Atlas arbeitet standardmäßig im Nur-Lese-Modus, um die Datenintegrität zu gewährleisten.
 
 ```typescript
 const atlas = new Agent('atlas-core');
 await atlas.connect({ source: 'snowflake' });
 ```
 
-## Use Cases
+## Anwendungsfälle
 
-- **Financial Analytics**: Process millions of transactions to identify spending patterns
-- **Healthcare Data**: Normalize patient records across multiple EMR systems
-- **E-commerce**: Real-time inventory tracking and demand forecasting
+- **Finanzanalyse**: Verarbeite Millionen von Transaktionen, um Ausgabemuster zu identifizieren
+- **Gesundheitsdaten**: Normalisiere Patientenakten über mehrere EMR-Systeme hinweg
+- **E-Commerce**: Echtzeit-Bestandsverfolgung und Nachfrageprognose

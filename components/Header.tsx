@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
             <span className="text-lg font-bold tracking-tight text-gray-900">Lumina</span>
           </div>
 
-          {/* Desktop Nav */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-8">
             {NAV_LINKS.map((link) => (
               <a 
@@ -31,13 +31,13 @@ export const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* CTA */}
+          {/* Call-to-Action Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className="text-sm font-medium text-gray-600 hover:text-gray-900">Log in</a>
-            <Button size="sm">Get Started</Button>
+            <a href="#" className="text-sm font-medium text-gray-600 hover:text-gray-900">Anmelden</a>
+            <Button size="sm">Loslegen</Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menü Button */}
           <div className="md:hidden">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-100 bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -63,7 +63,7 @@ export const Header: React.FC = () => {
               </a>
             ))}
             <div className="mt-4 pt-4 border-t border-gray-100 px-3">
-              <Button className="w-full">Get Started</Button>
+              <Button className="w-full">Loslegen</Button>
             </div>
           </div>
         </div>

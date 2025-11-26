@@ -1,59 +1,59 @@
 ---
 id: agent-004
 name: Vesper
-role: Security Sentinel
-description: 24/7 cybersecurity monitoring agent that detects vulnerabilities and prevents unauthorized access attempts.
+role: Sicherheits-Wächter
+description: 24/7 Cybersicherheits-Überwachungsagent, der Schwachstellen erkennt und unbefugte Zugriffsversuche verhindert.
 avatarUrl: https://picsum.photos/id/433/200/200
 status: offline
 capabilities:
-  - Threat Detection
-  - Log Analysis
-  - Access Control
+  - Bedrohungserkennung
+  - Log-Analyse
+  - Zugriffskontrolle
 ---
 
-# Vesper Security Protocols
+# Vesper Sicherheitsprotokolle
 
-Vesper runs silently in the background of your infrastructure, analyzing traffic patterns for malicious intent.
+Vesper läuft leise im Hintergrund deiner Infrastruktur und analysiert Verkehrsmuster auf böswillige Absichten.
 
-## Detection Engine
+## Erkennungs-Engine
 
-Vesper uses a proprietary behavioral model to identify zero-day threats that signature-based antivirus software misses.
+Vesper verwendet ein proprietäres Verhaltensmodell, um Zero-Day-Bedrohungen zu identifizieren, die signaturbasierte Antivirensoftware übersieht.
 
-### Threat Categories
+### Bedrohungskategorien
 
-- **Network Intrusion**: Detects port scanning, DDoS attempts, and lateral movement
-- **Data Exfiltration**: Monitors unusual data transfer patterns
-- **Credential Stuffing**: Identifies brute force and credential spraying attacks
-- **Insider Threats**: Behavioral analysis of user activity anomalies
+- **Netzwerkeinbruch**: Erkennt Port-Scanning, DDoS-Versuche und laterale Bewegungen
+- **Datenexfiltration**: Überwacht ungewöhnliche Datenübertragungsmuster
+- **Credential Stuffing**: Identifiziert Brute-Force- und Credential-Spraying-Angriffe
+- **Insider-Bedrohungen**: Verhaltensanalyse von Anomalien bei Benutzeraktivitäten
 
-## Incident Response
+## Vorfallreaktion
 
-In the event of a breach, Vesper can:
+Im Falle eines Sicherheitsvorfalls kann Vesper:
 
-1.  Isolate compromised nodes.
-2.  Revoke API keys.
-3.  Generate a forensic report for your security team.
+1.  Kompromittierte Knoten isolieren.
+2.  API-Schlüssel widerrufen.
+3.  Einen forensischen Bericht für dein Sicherheitsteam erstellen.
 
-## Compliance Dashboard
+## Compliance-Dashboard
 
-Vesper provides real-time compliance monitoring for:
-- **GDPR** - Data residency and access controls
-- **HIPAA** - PHI protection verification
-- **PCI-DSS** - Payment data security
-- **SOC2** - Trust services criteria
+Vesper bietet Echtzeit-Compliance-Überwachung für:
+- **DSGVO** - Datenresidenz und Zugriffskontrollen
+- **HIPAA** - PHI-Schutzverifikation
+- **PCI-DSS** - Zahlungsdatensicherheit
+- **SOC2** - Vertrauensdienstkriterien
 
-## Deployment Options
+## Bereitstellungsoptionen
 
 ```typescript
 const vesper = new Agent('vesper-sentinel');
 
 await vesper.deploy({
-  mode: 'passive', // or 'active' for auto-remediation
+  mode: 'passive', // oder 'active' für automatische Behebung
   scope: ['network', 'endpoints', 'cloud'],
   alertChannels: ['slack', 'pagerduty', 'email']
 });
 ```
 
-## Alert Configuration
+## Alarm-Konfiguration
 
-Configure severity thresholds and escalation paths to match your security operations workflow.
+Konfiguriere Schweregrad-Schwellenwerte und Eskalationspfade, um sie an deinen Security-Operations-Workflow anzupassen.
