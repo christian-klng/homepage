@@ -1,0 +1,37 @@
+---
+id: agent-001
+name: Atlas
+role: Data Architect
+description: Specializes in structuring complex datasets and generating actionable insights from unstructured data lakes.
+avatarUrl: https://picsum.photos/id/64/200/200
+status: online
+capabilities:
+  - Data Mining
+  - SQL Generation
+  - Trend Analysis
+---
+
+# About Atlas
+
+Atlas is designed to be the backbone of your data infrastructure. Unlike traditional ETL tools, Atlas uses semantic understanding to link disparate data sources.
+
+## Core Competencies
+
+*   **Schema Inference**: Automatically detects relationships between tables.
+*   **Query Optimization**: Rewrites SQL queries for 10x performance improvements.
+*   **Anomaly Detection**: Real-time monitoring of data quality streams.
+
+## Integration Guide
+
+To integrate Atlas into your pipeline, simply provide read-access credentials. Atlas operates in a read-only mode by default to ensure data integrity.
+
+```typescript
+const atlas = new Agent('atlas-core');
+await atlas.connect({ source: 'snowflake' });
+```
+
+## Use Cases
+
+- **Financial Analytics**: Process millions of transactions to identify spending patterns
+- **Healthcare Data**: Normalize patient records across multiple EMR systems
+- **E-commerce**: Real-time inventory tracking and demand forecasting

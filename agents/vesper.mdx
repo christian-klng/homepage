@@ -1,0 +1,59 @@
+---
+id: agent-004
+name: Vesper
+role: Security Sentinel
+description: 24/7 cybersecurity monitoring agent that detects vulnerabilities and prevents unauthorized access attempts.
+avatarUrl: https://picsum.photos/id/433/200/200
+status: offline
+capabilities:
+  - Threat Detection
+  - Log Analysis
+  - Access Control
+---
+
+# Vesper Security Protocols
+
+Vesper runs silently in the background of your infrastructure, analyzing traffic patterns for malicious intent.
+
+## Detection Engine
+
+Vesper uses a proprietary behavioral model to identify zero-day threats that signature-based antivirus software misses.
+
+### Threat Categories
+
+- **Network Intrusion**: Detects port scanning, DDoS attempts, and lateral movement
+- **Data Exfiltration**: Monitors unusual data transfer patterns
+- **Credential Stuffing**: Identifies brute force and credential spraying attacks
+- **Insider Threats**: Behavioral analysis of user activity anomalies
+
+## Incident Response
+
+In the event of a breach, Vesper can:
+
+1.  Isolate compromised nodes.
+2.  Revoke API keys.
+3.  Generate a forensic report for your security team.
+
+## Compliance Dashboard
+
+Vesper provides real-time compliance monitoring for:
+- **GDPR** - Data residency and access controls
+- **HIPAA** - PHI protection verification
+- **PCI-DSS** - Payment data security
+- **SOC2** - Trust services criteria
+
+## Deployment Options
+
+```typescript
+const vesper = new Agent('vesper-sentinel');
+
+await vesper.deploy({
+  mode: 'passive', // or 'active' for auto-remediation
+  scope: ['network', 'endpoints', 'cloud'],
+  alertChannels: ['slack', 'pagerduty', 'email']
+});
+```
+
+## Alert Configuration
+
+Configure severity thresholds and escalation paths to match your security operations workflow.

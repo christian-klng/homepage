@@ -1,0 +1,55 @@
+---
+id: agent-003
+name: Nexus
+role: System Orchestrator
+description: Manages API integrations and automates workflows between your SaaS tools.
+avatarUrl: https://picsum.photos/id/823/200/200
+status: busy
+capabilities:
+  - Workflow Auto
+  - API Management
+  - Error Handling
+---
+
+# Nexus System Overview
+
+Nexus acts as the glue between your software stack. If Zapier had a PhD in Computer Science, it would be Nexus.
+
+## How it works
+
+Nexus listens to webhooks and triggers complex, multi-step logic chains. It can handle conditional branching, loops, and retries natively.
+
+> "Nexus reduced our operational overhead by 40% in the first week." - *CTO at TechFlow*
+
+## Core Capabilities
+
+- **Visual Workflow Builder**: Drag-and-drop interface for complex automations
+- **Smart Retry Logic**: Exponential backoff with circuit breakers
+- **Event Sourcing**: Full audit trail of every action taken
+
+## Security
+
+*   SOC2 Compliant
+*   End-to-End Encryption
+*   Self-hosted options available
+
+## Supported Integrations
+
+Nexus connects natively with 200+ tools including:
+- **CRM**: Salesforce, HubSpot, Pipedrive
+- **Communication**: Slack, Teams, Discord
+- **Dev Tools**: GitHub, Jira, Linear
+- **Databases**: PostgreSQL, MongoDB, Snowflake
+
+## Quick Start
+
+```typescript
+const nexus = new Agent('nexus-orchestrator');
+
+nexus.on('github.push', async (event) => {
+  await nexus.trigger('slack.notify', {
+    channel: '#deploys',
+    message: `New commit by ${event.author}`
+  });
+});
+```

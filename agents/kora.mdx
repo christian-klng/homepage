@@ -1,0 +1,47 @@
+---
+id: agent-002
+name: Kora
+role: Creative Copywriter
+description: An imaginative agent capable of drafting marketing copy, blog posts, and technical documentation with a human touch.
+avatarUrl: https://picsum.photos/id/338/200/200
+status: online
+capabilities:
+  - SEO Writing
+  - Technical Docs
+  - Social Media
+---
+
+# Meet Kora
+
+Kora isn't just a text generator; she is a style-adaptive creative partner. She learns your brand voice within 3 interactions and maintains consistency across all channels.
+
+## Tone & Style
+
+Kora can switch modes instantly:
+
+1.  **Professional**: Concise, authoritative, and clean.
+2.  **Playful**: Witty, engaging, and emoji-friendly.
+3.  **Technical**: Precise, detailed, and structured.
+
+## Features
+
+- **Brand Voice Memory**: Kora remembers your preferences and style guidelines
+- **Multi-format Output**: From tweets to whitepapers, all in your voice
+- **Collaborative Editing**: Real-time suggestions as you write
+
+## Recent Updates (v2.4)
+
+*   Added support for multi-language localization.
+*   Improved context window for long-form novel writing.
+*   New integrations with Notion, Confluence, and Google Docs.
+
+## Getting Started
+
+```typescript
+const kora = new Agent('kora-creative');
+await kora.setBrandVoice({
+  tone: 'professional',
+  audience: 'B2B SaaS',
+  guidelines: './brand-guide.pdf'
+});
+```
