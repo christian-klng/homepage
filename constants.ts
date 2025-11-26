@@ -21,8 +21,8 @@ export const AGENTS_DATA: Agent[] = loadAgentsFromGlob(agentModules);
  * Navigationslinks für die Kopfzeile.
  */
 export const NAV_LINKS = [
-  { label: 'Funktionen', href: '#features' },
-  { label: 'Methodik', href: '#methodology' },
-  { label: 'Preise', href: '#pricing' },
-  { label: 'Unternehmen', href: '#company' },
+  { label: 'Vorteile', href: '#value' },
+  { label: 'Features', href: '#features' },
+  { label: 'Agenten', href: '#agents' },
+  { label: 'Dokumentation', href: '#docs' },
 ];

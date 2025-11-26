@@ -9,8 +9,19 @@ import {
   Github, 
   Twitter, 
   CheckCircle2,
-  Menu
+  Menu,
+  Users,
+  Search,
+  Target,
+  Network,
+  Linkedin,
+  Image
 } from 'lucide-react';
+
+// Platzhalter-Icon für Bilder
+const ImagePlaceholder: React.FC<{ className?: string }> = ({ className }) => (
+  <Image className={className} />
+);
 
 export const Icons = {
   Terminal,
@@ -22,5 +33,11 @@ export const Icons = {
   Github,
   Twitter,
   CheckCircle2,
-  Menu
+  Menu,
+  Users,
+  Search,
+  Target,
+  Network,
+  Linkedin,
+  ImagePlaceholder
 };

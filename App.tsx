@@ -20,25 +20,15 @@ function App() {
         <section className="relative pt-20 pb-32 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium text-gray-600 bg-white border border-gray-200 mb-8 shadow-sm"
-              >
-                <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
-                Lumina 2.0 ist jetzt verfügbar
-              </motion.div>
-              
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
+                transition={{ duration: 0.5 }}
                 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6"
               >
-                Intelligente Agenten für <br/>
+                Deine KI-Agenten für{' '}
                 <span className="relative inline-block">
-                  <span className="relative z-10">moderne Teams</span>
+                  <span className="relative z-10">intelligentes Lead-Management</span>
                   <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/40 -z-0"></span>
                 </span>
               </motion.h1>
@@ -46,21 +36,21 @@ function App() {
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-10 leading-relaxed"
               >
-                Automatisiere komplexe Arbeitsabläufe mit unserer Palette spezialisierter KI-Agenten.
-                Entwickelt für Genauigkeit, Sicherheit und nahtlose Integration.
+                KI-Agenten reduzieren deinen Aufwand in der Neukundenakquise – von der Lead-Recherche 
+                bis zur CRM-Pflege. Bleib im Zentrum des Prozesses, während die KI die Arbeit übernimmt.
               </motion.p>
               
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 className="flex items-center justify-center gap-4"
               >
-                <Button size="lg">Agenten entdecken</Button>
-                <Button size="lg" variant="secondary">Dokumentation ansehen</Button>
+                <Button size="lg">Kontakt aufnehmen</Button>
+                <Button size="lg" variant="secondary">Dokumentation</Button>
               </motion.div>
             </div>
           </div>
@@ -69,6 +59,158 @@ function App() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-0 pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl mix-blend-multiply filter opacity-70 animate-blob"></div>
             <div className="absolute top-20 right-10 w-72 h-72 bg-purple-100 rounded-full blur-3xl mix-blend-multiply filter opacity-70 animate-blob animation-delay-2000"></div>
+          </div>
+        </section>
+
+        {/* Value Proposition */}
+        <section id="value" className="py-24 bg-white border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                  Mehr Leads. Weniger Aufwand.{' '}
+                  <span className="text-primary">Smarter wachsen.</span>
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Schluss mit manueller Recherche und Excel-Listen. Unsere AI-Agenten analysieren 
+                  dein Netzwerk, finden qualifizierte Leads und halten deine Dokumentation automatisch 
+                  aktuell – während du die Kontrolle behältst.
+                </p>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="relative"
+              >
+                {/* Platzhalter für Bild */}
+                <div className="aspect-video bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+                  <div className="text-center text-gray-400">
+                    <Icons.ImagePlaceholder className="w-16 h-16 mx-auto mb-4" />
+                    <p className="text-sm">Bild-Platzhalter</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features */}
+        <section id="features" className="py-24 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Unsere Features
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Drei leistungsstarke Module für dein Lead-Management
+              </p>
+            </div>
+
+            <div className="space-y-24">
+              {/* Feature 1: Netzwerk-Intelligenz */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+              >
+                <div className="order-2 lg:order-1">
+                  {/* Platzhalter für Bild */}
+                  <div className="aspect-video bg-white rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center shadow-sm">
+                    <div className="text-center text-gray-400">
+                      <Icons.ImagePlaceholder className="w-16 h-16 mx-auto mb-4" />
+                      <p className="text-sm">Bild-Platzhalter</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium text-primary bg-primary/10 mb-4">
+                    <Icons.Network className="w-4 h-4 mr-2" />
+                    Netzwerk-Intelligenz
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Entdecke verborgenes Potenzial in deinem LinkedIn-Netzwerk
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Analysiere automatisch deine bestehenden Kontakte und identifiziere 
+                    die wertvollsten Leads für dein Business.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Feature 2: Automatisierte Lead-Recherche */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+              >
+                <div>
+                  <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium text-primary bg-primary/10 mb-4">
+                    <Icons.Search className="w-4 h-4 mr-2" />
+                    Automatisierte Lead-Recherche
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Finde die richtigen Ansprechpartner – nicht irgendwelche
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Unsere AI durchsucht das Web nach passenden Unternehmen und Kontakten 
+                    basierend auf deinem idealen Kundenprofil.
+                  </p>
+                </div>
+                <div>
+                  {/* Platzhalter für Bild */}
+                  <div className="aspect-video bg-white rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center shadow-sm">
+                    <div className="text-center text-gray-400">
+                      <Icons.ImagePlaceholder className="w-16 h-16 mx-auto mb-4" />
+                      <p className="text-sm">Bild-Platzhalter</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Feature 3: Zentrale Marketing-Intelligenz */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+              >
+                <div className="order-2 lg:order-1">
+                  {/* Platzhalter für Bild */}
+                  <div className="aspect-video bg-white rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center shadow-sm">
+                    <div className="text-center text-gray-400">
+                      <Icons.ImagePlaceholder className="w-16 h-16 mx-auto mb-4" />
+                      <p className="text-sm">Bild-Platzhalter</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium text-primary bg-primary/10 mb-4">
+                    <Icons.Target className="w-4 h-4 mr-2" />
+                    Zentrale Marketing-Intelligenz
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Eine zentrale Strategie für dein Unternehmen
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Erstelle eine zentrale Dokumentation, die automatisch zur Validierung 
+                    und Qualifizierung jedes Leads herangezogen wird.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </section>
 
@@ -141,18 +283,18 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <div className="w-6 h-6 bg-primary rounded flex items-center justify-center">
-                <Icons.Cpu className="w-3 h-3 text-primary-content" />
+              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                <Icons.Users className="w-4 h-4 text-primary-content" />
               </div>
-              <span className="font-bold text-gray-900">Lumina AI</span>
+              <span className="font-bold text-gray-900">Human in the Loop</span>
             </div>
             <div className="flex gap-6 text-gray-500">
                <a href="#" className="hover:text-gray-900"><Icons.Twitter className="w-5 h-5"/></a>
-               <a href="#" className="hover:text-gray-900"><Icons.Github className="w-5 h-5"/></a>
+               <a href="#" className="hover:text-gray-900"><Icons.Linkedin className="w-5 h-5"/></a>
             </div>
           </div>
           <div className="mt-8 text-center md:text-left text-sm text-gray-400">
-            © 2024 Lumina AI GmbH. Alle Rechte vorbehalten.
+            © 2024 Human in the Loop. Alle Rechte vorbehalten.
           </div>
         </div>
       </footer>

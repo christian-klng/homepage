@@ -13,9 +13,9 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Icons.Cpu className="w-5 h-5 text-primary-content" />
+              <Icons.Users className="w-4 h-4 text-primary-content" />
             </div>
-            <span className="text-lg font-bold tracking-tight text-gray-900">Lumina</span>
+            <span className="text-lg font-bold tracking-tight text-gray-900">Human in the Loop</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -31,10 +31,9 @@ export const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* Call-to-Action Buttons */}
+          {/* Call-to-Action Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className="text-sm font-medium text-gray-600 hover:text-gray-900">Anmelden</a>
-            <Button size="sm">Loslegen</Button>
+            <Button size="sm">Kontakt aufnehmen</Button>
           </div>
 
           {/* Mobile Menü Button */}
@@ -63,7 +62,7 @@ export const Header: React.FC = () => {
               </a>
             ))}
             <div className="mt-4 pt-4 border-t border-gray-100 px-3">
-              <Button className="w-full">Loslegen</Button>
+              <Button className="w-full">Kontakt aufnehmen</Button>
             </div>
           </div>
         </div>
