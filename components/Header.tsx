@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Icons } from './Icons';
 import { NAV_LINKS } from '../constants';
 import { Button } from './Button';
+import logoImage from '../cube_logo_mini.png';
 
 export const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,9 +13,7 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Icons.Users className="w-4 h-4 text-primary-content" />
-            </div>
+            <img src={logoImage} alt="Human in the Loop Logo" className="w-8 h-8" />
             <span className="text-lg font-bold tracking-tight text-gray-900">Human in the Loop</span>
           </div>
 

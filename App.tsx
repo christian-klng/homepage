@@ -7,6 +7,7 @@ import { Button } from './components/Button';
 import { AGENTS_DATA } from './constants';
 import { Agent } from './types';
 import { motion } from 'framer-motion';
+import logoImage from './cube_logo_mini.png';
 
 function App() {
   const [selectedAgent, setSelectedAgent] = useState<Agent | null>(null);
@@ -283,9 +284,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Icons.Users className="w-4 h-4 text-primary-content" />
-              </div>
+              <img src={logoImage} alt="Human in the Loop Logo" className="w-8 h-8" />
               <span className="font-bold text-gray-900">Human in the Loop</span>
             </div>
             <div className="flex gap-6 text-gray-500">
