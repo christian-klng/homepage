@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 import { AgentCard } from './components/AgentCard';
 import { AgentDetailModal } from './components/AgentDetailModal';
 import { AIChatDemo } from './components/AIChatDemo';
@@ -8,7 +9,6 @@ import { Button } from './components/Button';
 import { AGENTS_DATA } from './constants';
 import { Agent } from './types';
 import { motion } from 'framer-motion';
-import logoImage from './cube_logo_mini.png';
 
 function App() {
   const [selectedAgent, setSelectedAgent] = useState<Agent | null>(null);
@@ -275,23 +275,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="bg-white border-t border-gray-200 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <img src={logoImage} alt="Human in the Loop Logo" className="w-8 h-8" />
-              <span className="font-bold text-gray-900">Human in the Loop</span>
-            </div>
-            <div className="flex gap-6 text-gray-500">
-               <a href="#" className="hover:text-gray-900"><Icons.Twitter className="w-5 h-5"/></a>
-               <a href="#" className="hover:text-gray-900"><Icons.Linkedin className="w-5 h-5"/></a>
-            </div>
-          </div>
-          <div className="mt-8 text-center md:text-left text-sm text-gray-400">
-            © 2024 Human in the Loop. Alle Rechte vorbehalten.
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Modal-Ebene */}
       {selectedAgent && (
