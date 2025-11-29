@@ -24,5 +24,4 @@ export const NAV_LINKS = [
   { label: 'Vorteile', href: '#value' },
   { label: 'Features', href: '#features' },
   { label: 'Agenten', href: '#agents' },
-  { label: 'Dokumentation', href: '#docs' },
 ];

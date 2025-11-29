@@ -7,6 +7,25 @@ import logoImage from '../cube_logo_mini.png';
 export const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  /**
+   * Scrollt sanft zu einem Abschnitt mit dezenter Animation.
+   */
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      
+      // Mobile Menü schließen nach Klick
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +41,8 @@ export const Header: React.FC = () => {
             {NAV_LINKS.map((link) => (
               <a 
                 key={link.label} 
-                href={link.href} 
+                href={link.href}
+                onClick={(e) => handleSmoothScroll(e, link.href)}
                 className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {link.label}
@@ -55,6 +75,7 @@ export const Header: React.FC = () => {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={(e) => handleSmoothScroll(e, link.href)}
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
               >
                 {link.label}
