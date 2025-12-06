@@ -20,10 +20,24 @@ export const Footer: React.FC = () => {
             </a>
           </div>
         </div>
+
+        {/* Badges: Made in Germany & Gehostet in Europa */}
+        <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
+          <div className="flex items-center gap-2 text-sm text-gray-600">
+            <span>Made in Germany</span>
+            <Icons.FlagGermany className="w-5 h-4" />
+          </div>
+          <div className="flex items-center gap-2 text-sm text-gray-600">
+            <span>Gehostet in Europa</span>
+            <Icons.FlagEurope className="w-5 h-4" />
+          </div>
+        </div>
+
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <span>© 2024 Human in the Loop. Alle Rechte vorbehalten.</span>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="/impressum" className="hover:text-gray-600">Impressum</a>
+            <a href="/datenschutz" className="hover:text-gray-600">Datenschutz</a>
           </div>
         </div>
       </div>

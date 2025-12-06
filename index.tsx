@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { Impressum } from './pages/Impressum';
+import { Datenschutz } from './pages/Datenschutz';
 
 /**
  * Einfaches Routing basierend auf dem aktuellen Pfad.
@@ -13,6 +14,8 @@ const Router: React.FC = () => {
   switch (path) {
     case '/impressum':
       return <Impressum />;
+    case '/datenschutz':
+      return <Datenschutz />;
     default:
       return <App />;
   }
