@@ -26,11 +26,11 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col gap-2 mb-4 md:mb-0">
             <div className="flex items-center gap-2">
               <span>Made in Germany</span>
-              <Icons.FlagGermany className="w-4 h-4" />
+              <span>🇩🇪</span>
             </div>
             <div className="flex items-center gap-2">
               <span>Gehostet in Europa</span>
-              <Icons.FlagEurope className="w-4 h-4" />
+              <span>🇪🇺</span>
             </div>
           </div>
 
