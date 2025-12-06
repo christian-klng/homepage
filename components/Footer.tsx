@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <img src={logoImage} alt="Human in the Loop Logo" className="w-8 h-8" />
-            <span className="font-bold text-gray-900">Human in the Loop</span>
+            <span className="font-semibold text-gray-900">Human in the Loop</span>
           </div>
           <div className="flex gap-6 text-gray-500">
             <a href="#" className="hover:text-gray-900">

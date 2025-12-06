@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
             <img src={logoImage} alt="Human in the Loop Logo" className="w-8 h-8" />
-            <span className="text-lg font-bold tracking-tight text-gray-900">Human in the Loop</span>
+            <span className="text-lg font-semibold tracking-tight text-gray-900">Human in the Loop</span>
           </div>
 
           {/* Desktop Navigation */}
